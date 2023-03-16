@@ -1,1 +1,27 @@
-<app-coins></app-coins>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header flex w-100 px-11 py-3 border-b border-slate-300  bg-slate-50  ">
+        <div class="header flex container mx-auto items-center justify-center">
+            <p class="logo uppercase font-bold text-slate-500  text-2xl whitespace-nowrap cursor-pointer"><a href="/">CRYPTO TRACKER</a></p>
+                <ul class="header__navbar__list flex space-x-6 container justify-center [&>*]:font-bold" >
+                    <li class="header__navbar__list-element"><a href="">Cryptocurrencies</a></li>
+                    <li class="header__navbar__list-element"><a href="">Calculator of investments</a></li>
+                </ul>
+            <hr>
+            <div class="header__auth flex items-center justify-center space-x-8 [&>*]:font-bold border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
+                <a href="/login" class="header__auth-login">Login</a>
+                <a href="/registration" class="header__auth-signup whitespace-nowrap">Sign up</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- <app-coins></app-coins> -->
+    <router-outlet></router-outlet>
+</body>
+</html>
